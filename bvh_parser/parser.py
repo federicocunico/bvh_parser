@@ -463,7 +463,7 @@ def get_joint_and_links(
     #         links.append([parent_index, child_index])
     joint_data = []
 
-    for i in tqdm(range(0, len(joints_rotations)), verbose=verbose):
+    for i in tqdm(range(0, len(joints_rotations)), disable=not verbose):
 
         frame_data = joints_rotations[i]
 
